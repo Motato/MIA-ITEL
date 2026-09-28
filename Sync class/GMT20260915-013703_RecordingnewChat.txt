@@ -1,0 +1,2 @@
+00:26:21	Hernán Montoya:	Cadenas de Markov.
+00:46:48	Hernán Montoya:	Aprendizaje por Refuerzo (RL) como Q-Learning o DQN explorando en tiempo real, la pila de conducción autónoma de Tesla (Full Self-Driving / FSD) ha evolucionado hacia una combinación de Aprendizaje Supervisado masivo, Aprendizaje por Imitación (Behavioral Cloning) y Aprendizaje de Representaciones Multimodales de Extremo a Extremo (End-to-End AI).Fuente: Recuperado de Google.
