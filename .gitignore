@@ -1,66 +1,23 @@
-# ---------------------------------------------------
-# Global ignore: exclude everything by default
-# ---------------------------------------------------
+# Global ignore
 *
 
-# ---------------------------------------------------
-# Keep essential files
-# ---------------------------------------------------
+# Keep essentials
 !.gitignore
 !README.md
 !LICENSE
 !pyproject.toml
 !uv.lock
 
-# ---------------------------------------------------
-# Root coursework folder
-!Aprendizaje Automático Avanzado/
+# Root folder with space
+!Aprendizaje Automatico Avanzado/
 
-# Activity folders (include all files inside)
-!Aprendizaje Automático Avanzado/AprendizajeAutomaticoAvanzado_U1/
-!Aprendizaje Automático Avanzado/AprendizajeAutomaticoAvanzado_U2/
-!Aprendizaje Automático Avanzado/AprendizajeAutomaticoAvanzado_U3/
-!Aprendizaje Automático Avanzado/AprendizajeAutomaticoAvanzado_U4/
+# Subfolders
+!Aprendizaje Automatico Avanzado/AprendizajeAutomaticoAvanzado_U1/
+!Aprendizaje Automatico Avanzado/AprendizajeAutomaticoAvanzado_U2/
+!Aprendizaje Automatico Avanzado/AprendizajeAutomaticoAvanzado_U3/
+!Aprendizaje Automatico Avanzado/AprendizajeAutomaticoAvanzado_U4/
+!Aprendizaje Automatico Avanzado/data/
 
-# Keep Python files inside activity folders
-!Aprendizaje Automático Avanzado/AprendizajeAutomaticoAvanzado_U1/*.py
-!Aprendizaje Automático Avanzado/AprendizajeAutomaticoAvanzado_U2/*.py
-!Aprendizaje Automático Avanzado/AprendizajeAutomaticoAvanzado_U3/*.py
-!Aprendizaje Automático Avanzado/AprendizajeAutomaticoAvanzado_U4/*.py
-
-# ---------------------------------------------------
-# Data folder (include CSV datasets)
-!Aprendizaje Automático Avanzado/data/
-!Aprendizaje Automático Avanzado/data/*.csv
-
-# ---------------------------------------------------
-# Explicitly ignore large/binary files
-*.mp4
-*.mov
-*.avi
-*.mkv
-*.zip
-*.rar
-*.tar
-*.gz
-
-# ---------------------------------------------------
-# Python build artifacts
-__pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
-
-# ---------------------------------------------------
-# Virtual environments
-.venv/
-.env/
-
-# ---------------------------------------------------
-# IDE/editor configs (optional, keeps repo clean)
-.vscode/
-.idea/
-
-
+# Python and CSV files
+!Aprendizaje Automatico Avanzado/**/*.py
+!Aprendizaje Automatico Avanzado/**/*.csv
