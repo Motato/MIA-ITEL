@@ -1,0 +1,46 @@
+# ---------------------------------------------------
+# Global ignore: exclude everything by default
+# ---------------------------------------------------
+*
+
+# ---------------------------------------------------
+# Keep essential files
+# ---------------------------------------------------
+!.gitignore
+
+# ---------------------------------------------------
+# Activity folders (include all files inside)
+!AprendizajeAutomaticoAvanzado_U1/
+!AprendizajeAutomaticoAvanzado_U2/
+!AprendizajeAutomaticoAvanzado_U3/
+!AprendizajeAutomaticoAvanzado_U4/
+
+# Keep Python files inside activity folders
+!AprendizajeAutomaticoAvanzado_U1/*.py
+!AprendizajeAutomaticoAvanzado_U2/*.py
+!AprendizajeAutomaticoAvanzado_U3/*.py
+!AprendizajeAutomaticoAvanzado_U4/*.py
+
+# ---------------------------------------------------
+# Data folder (include CSV datasets)
+!data/
+!data/*.csv
+
+# ---------------------------------------------------
+# Python build artifacts
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# ---------------------------------------------------
+# Virtual environments
+.venv/
+.env/
+
+# ---------------------------------------------------
+# IDE/editor configs (optional, keeps repo clean)
+.vscode/
+.idea/
