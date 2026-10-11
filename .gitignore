@@ -27,6 +27,17 @@
 !data/*.csv
 
 # ---------------------------------------------------
+# Explicitly ignore large/binary files
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.zip
+*.rar
+*.tar
+*.gz
+
+# ---------------------------------------------------
 # Python build artifacts
 __pycache__/
 *.py[oc]
