@@ -7,24 +7,31 @@
 # Keep essential files
 # ---------------------------------------------------
 !.gitignore
+!README.md
+!LICENSE
+!pyproject.toml
+!uv.lock
 
 # ---------------------------------------------------
+# Root coursework folder
+!Aprendizaje Automático Avanzado/
+
 # Activity folders (include all files inside)
-!AprendizajeAutomaticoAvanzado_U1/
-!AprendizajeAutomaticoAvanzado_U2/
-!AprendizajeAutomaticoAvanzado_U3/
-!AprendizajeAutomaticoAvanzado_U4/
+!Aprendizaje Automático Avanzado/AprendizajeAutomaticoAvanzado_U1/
+!Aprendizaje Automático Avanzado/AprendizajeAutomaticoAvanzado_U2/
+!Aprendizaje Automático Avanzado/AprendizajeAutomaticoAvanzado_U3/
+!Aprendizaje Automático Avanzado/AprendizajeAutomaticoAvanzado_U4/
 
 # Keep Python files inside activity folders
-!AprendizajeAutomaticoAvanzado_U1/*.py
-!AprendizajeAutomaticoAvanzado_U2/*.py
-!AprendizajeAutomaticoAvanzado_U3/*.py
-!AprendizajeAutomaticoAvanzado_U4/*.py
+!Aprendizaje Automático Avanzado/AprendizajeAutomaticoAvanzado_U1/*.py
+!Aprendizaje Automático Avanzado/AprendizajeAutomaticoAvanzado_U2/*.py
+!Aprendizaje Automático Avanzado/AprendizajeAutomaticoAvanzado_U3/*.py
+!Aprendizaje Automático Avanzado/AprendizajeAutomaticoAvanzado_U4/*.py
 
 # ---------------------------------------------------
 # Data folder (include CSV datasets)
-!data/
-!data/*.csv
+!Aprendizaje Automático Avanzado/data/
+!Aprendizaje Automático Avanzado/data/*.csv
 
 # ---------------------------------------------------
 # Explicitly ignore large/binary files
@@ -55,3 +62,5 @@ wheels/
 # IDE/editor configs (optional, keeps repo clean)
 .vscode/
 .idea/
+
+
