@@ -17,7 +17,7 @@ warnings.filterwarnings("ignore", category=UserWarning)
 # 1) Ingesta de Datos
 # ============================================================
 # Se asume que 'diagnosis' es la variable objetivo (ej. M=Maligno, B=Benigno)
-df = pd.read_csv("./data/breast_cancer_dataset.csv")
+df = pd.read_csv("Aprendizaje Automatico Avanzado/data/breast_cancer_dataset.csv")
 
 # Separación de variables predictoras (X) y la etiqueta (y)
 X = df.drop("diagnosis", axis=1)

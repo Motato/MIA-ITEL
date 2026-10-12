@@ -17,7 +17,7 @@ warnings.filterwarnings("ignore")
 # ============================================================
 # 1) Ingesta de Datos
 # ============================================================
-df = pd.read_csv("./data/reviews_sentiment.csv", sep=";")
+df = pd.read_csv("Aprendizaje Automatico Avanzado/data/reviews_sentiment.csv", sep=";")
 
 # ============================================================
 # 2) Vectorización Semántica (TF-IDF)

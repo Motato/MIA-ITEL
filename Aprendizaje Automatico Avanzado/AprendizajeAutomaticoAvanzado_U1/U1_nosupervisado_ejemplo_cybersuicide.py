@@ -8,7 +8,7 @@ from sklearn.cluster import KMeans
 # ============================================================
 # 1) Cargar dataset
 # ============================================================
-df = pd.read_csv("./data/dataset_cibersuicidio.csv")
+df = pd.read_csv("Aprendizaje Automatico Avanzado/data/dataset_cibersuicidio.csv")
 
 # ============================================================
 # 2) Variables predictoras (sin etiqueta)

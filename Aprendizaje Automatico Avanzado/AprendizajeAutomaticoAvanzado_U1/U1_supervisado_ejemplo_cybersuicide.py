@@ -31,7 +31,7 @@ print(" DETECCIÓN DE VOCABULARIO DE CIBERSUICIDIO")
 
 inicio_tiempo = time.time()   # Inicia contador de tiempo
 
-dataset = './data/dataset_cibersuicidio.csv'
+dataset = 'Aprendizaje Automatico Avanzado/data/dataset_cibersuicidio.csv'
 df = pd.read_csv(dataset)
 
 print("\nDimensión del Dataset:")

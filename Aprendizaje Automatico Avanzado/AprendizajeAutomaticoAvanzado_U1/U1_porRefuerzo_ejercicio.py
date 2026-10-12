@@ -69,7 +69,7 @@ class SentimentEnv(gym.Env):
 # 2) Entrenamiento del Agente (Q-Learning Tabular)
 # ============================================================
 N_CLUSTERS = 10
-env = SentimentEnv(dataset_path="./data/reviews_sentiment.csv", n_clusters=N_CLUSTERS)
+env = SentimentEnv(dataset_path="Aprendizaje Automatico Avanzado/data/reviews_sentiment.csv", n_clusters=N_CLUSTERS)
 
 # Inicializar Tabla Q [Estados x Acciones]
 Q = np.zeros((env.observation_space.n, env.action_space.n))
