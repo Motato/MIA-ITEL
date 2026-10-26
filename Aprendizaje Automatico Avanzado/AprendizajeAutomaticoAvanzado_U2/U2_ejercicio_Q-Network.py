@@ -187,6 +187,66 @@ def train_dqn(env_name: str = "CartPole-v1", episodes: int = 400):
     env.close()
     return agent, scores
 
+
+
+# ==========================================
+# Evaluación visual del agente entrenado
+# ==========================================
+def evaluate_dqn(agent, env_name="CartPole-v1", episodes=3):
+    """
+    Ejecuta el agente entrenado en modo visual.
+    La política es completamente greedy (sin exploración).
+    """
+
+    env = gym.make(env_name, render_mode="human")
+
+    # Desactivar exploración
+    original_epsilon = agent.epsilon
+    agent.epsilon = 0.0
+
+    for episode in range(1, episodes + 1):
+        state, _ = env.reset()
+        done = False
+        total_reward = 0
+
+        while not done:
+            action = agent.select_action(state)
+
+            state, reward, terminated, truncated, _ = env.step(action)
+
+            done = terminated or truncated
+            total_reward += reward
+
+        print(
+            f"Evaluación - Episodio {episode}: "
+            f"Recompensa = {total_reward}"
+        )
+
+    env.close()
+
+    # Restaurar epsilon original
+    agent.epsilon = original_epsilon
+
+
+
 if __name__ == "__main__":
     trained_agent, history = train_dqn()
+    # Evaluación visual
+    evaluate_dqn(trained_agent)
     
+    # Suavizar la curva para mejor visualización
+    rolling_length = 50
+    avg_rewards = [np.mean(history[i:i+rolling_length]) for i in range(len(history)-rolling_length)]
+    
+    plt.figure(figsize=(10,5))
+    plt.plot(avg_rewards, label='Recompensa media (50 ep)')
+    plt.title('Curva de Aprendizaje - DQN en CartPole')
+    plt.xlabel('Episodios')
+    plt.ylabel('Recompensa')
+    plt.legend()
+    
+    # Guardar en la carpeta de resultados
+    import os
+    os.makedirs('resultados', exist_ok=True)
+    plt.savefig('resultados/dqn_learning_curve.png')
+    plt.show()
