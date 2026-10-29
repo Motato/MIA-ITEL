@@ -1,23 +1,52 @@
+# ============================================================
 # Global ignore
+# ============================================================
 *
 
-# Keep essentials
+# ============================================================
+# Keep repository essentials
+# ============================================================
 !.gitignore
 !README.md
 !LICENSE
 !pyproject.toml
 !uv.lock
+!.python-version
 
-# Root folder with space
+# ============================================================
+# Main course folder
+# ============================================================
 !Aprendizaje Automatico Avanzado/
 
-# Subfolders
+# ============================================================
+# Units
+# ============================================================
 !Aprendizaje Automatico Avanzado/AprendizajeAutomaticoAvanzado_U1/
 !Aprendizaje Automatico Avanzado/AprendizajeAutomaticoAvanzado_U2/
 !Aprendizaje Automatico Avanzado/AprendizajeAutomaticoAvanzado_U3/
 !Aprendizaje Automatico Avanzado/AprendizajeAutomaticoAvanzado_U4/
+
+# Shared data folder
 !Aprendizaje Automatico Avanzado/data/
 
-# Python and CSV files
+# ============================================================
+# Source code and academic files
+# ============================================================
 !Aprendizaje Automatico Avanzado/**/*.py
+!Aprendizaje Automatico Avanzado/**/*.ipynb
 !Aprendizaje Automatico Avanzado/**/*.csv
+!Aprendizaje Automatico Avanzado/**/*.md
+!Aprendizaje Automatico Avanzado/**/*.txt
+!Aprendizaje Automatico Avanzado/**/*.pdf
+
+# ============================================================
+# U4 specific folders
+# ============================================================
+!Aprendizaje Automatico Avanzado/AprendizajeAutomaticoAvanzado_U4/data/
+!Aprendizaje Automatico Avanzado/AprendizajeAutomaticoAvanzado_U4/data/**
+
+!Aprendizaje Automatico Avanzado/AprendizajeAutomaticoAvanzado_U4/scripts/
+!Aprendizaje Automatico Avanzado/AprendizajeAutomaticoAvanzado_U4/scripts/**
+
+!Aprendizaje Automatico Avanzado/AprendizajeAutomaticoAvanzado
+
