@@ -21,6 +21,7 @@ dependencies = [
     "seaborn>=0.13.2",
     "stable-baselines3>=2.9.0",
     "swig>=4.5.1",
+    "tensorboard>=2.21.0",
     "torch>=2.14.1",
     "torchaudio>=2.11.0",
     "torchvision>=0.29.1",
