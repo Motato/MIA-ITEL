@@ -1,10 +1,10 @@
 # ============================================================
-# Global ignore
+# Ignore everything by default
 # ============================================================
 *
 
 # ============================================================
-# Keep repository essentials
+# Repository essentials
 # ============================================================
 !.gitignore
 !README.md
@@ -12,41 +12,94 @@
 !pyproject.toml
 !uv.lock
 !.python-version
+!requirements.txt
 
 # ============================================================
-# Main course folder
+# Aprendizaje Automatico Avanzado
+# Keep everything already tracked in this course
 # ============================================================
 !Aprendizaje Automatico Avanzado/
+!Aprendizaje Automatico Avanzado/**
 
 # ============================================================
-# Units
+# Sistemas Difusos Inteligentes
+# Keep ONLY Python files
 # ============================================================
-!Aprendizaje Automatico Avanzado/AprendizajeAutomaticoAvanzado_U1/
-!Aprendizaje Automatico Avanzado/AprendizajeAutomaticoAvanzado_U2/
-!Aprendizaje Automatico Avanzado/AprendizajeAutomaticoAvanzado_U3/
-!Aprendizaje Automatico Avanzado/AprendizajeAutomaticoAvanzado_U4/
 
-# Shared data folder
-!Aprendizaje Automatico Avanzado/data/
+# Allow traversal
+!Sistemas Difusos Inteligentes/
+!Sistemas Difusos Inteligentes/**/
+
+# Allow Python files
+!Sistemas Difusos Inteligentes/**/*.py
+
+# Explicitly ignore everything else
+Sistemas Difusos Inteligentes/**/*.pdf
+Sistemas Difusos Inteligentes/**/*.docx
+Sistemas Difusos Inteligentes/**/*.xlsx
+Sistemas Difusos Inteligentes/**/*.csv
+Sistemas Difusos Inteligentes/**/*.txt
+Sistemas Difusos Inteligentes/**/*.md
+Sistemas Difusos Inteligentes/**/*.png
+Sistemas Difusos Inteligentes/**/*.jpg
+Sistemas Difusos Inteligentes/**/*.jpeg
+Sistemas Difusos Inteligentes/**/*.tmp
+Sistemas Difusos Inteligentes/**/~$*
 
 # ============================================================
-# Source code and academic files
+# Python cache
 # ============================================================
-!Aprendizaje Automatico Avanzado/**/*.py
-!Aprendizaje Automatico Avanzado/**/*.ipynb
-!Aprendizaje Automatico Avanzado/**/*.csv
-!Aprendizaje Automatico Avanzado/**/*.md
-!Aprendizaje Automatico Avanzado/**/*.txt
-!Aprendizaje Automatico Avanzado/**/*.pdf
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
 # ============================================================
-# U4 specific folders
+# Virtual environments
 # ============================================================
-!Aprendizaje Automatico Avanzado/AprendizajeAutomaticoAvanzado_U4/data/
-!Aprendizaje Automatico Avanzado/AprendizajeAutomaticoAvanzado_U4/data/**
+.venv/
+venv/
+env/
 
-!Aprendizaje Automatico Avanzado/AprendizajeAutomaticoAvanzado_U4/scripts/
-!Aprendizaje Automatico Avanzado/AprendizajeAutomaticoAvanzado_U4/scripts/**
+# ============================================================
+# VS Code
+# ============================================================
+.vscode/
 
-!Aprendizaje Automatico Avanzado/AprendizajeAutomaticoAvanzado
+# ============================================================
+# Jupyter
+# ============================================================
+.ipynb_checkpoints/
 
+# ============================================================
+# Generated images
+# ============================================================
+**/resultados/*.png
+**/resultados/*.jpg
+**/resultados/*.jpeg
+
+# ============================================================
+# Machine Learning models
+# ============================================================
+*.joblib
+*.pkl
+*.pth
+
+# ============================================================
+# Reinforcement Learning artifacts
+# ============================================================
+*.npy
+events.out.tfevents.*
+
+# ============================================================
+# Large datasets and media
+# ============================================================
+*.zip
+*.gz
+*.mp4
+*.m4a
+
+# ============================================================
+# Microsoft Office temporary files
+# ============================================================
+~$*
