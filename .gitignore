@@ -16,33 +16,46 @@
 
 # ============================================================
 # Aprendizaje Automatico Avanzado
-# Keep everything already tracked in this course
+# Keep everything
 # ============================================================
 !Aprendizaje Automatico Avanzado/
 !Aprendizaje Automatico Avanzado/**
 
 # ============================================================
 # Sistemas Difusos Inteligentes
-# Keep ONLY Python files
+# Keep selected file types only
 # ============================================================
 
-# Allow traversal
+# Allow navigation through folders
 !Sistemas Difusos Inteligentes/
 !Sistemas Difusos Inteligentes/**/
 
-# Allow Python files
+# Allow Python
 !Sistemas Difusos Inteligentes/**/*.py
 
-# Explicitly ignore everything else
+# Allow MATLAB
+!Sistemas Difusos Inteligentes/**/*.m
+
+# Allow Markdown
+!Sistemas Difusos Inteligentes/**/*.md
+
+# Allow CSV
+!Sistemas Difusos Inteligentes/**/*.csv
+
+# Allow Excel
+!Sistemas Difusos Inteligentes/**/*.xlsx
+
+# ============================================================
+# Explicitly ignore other file types in
+# Sistemas Difusos Inteligentes
+# ============================================================
 Sistemas Difusos Inteligentes/**/*.pdf
 Sistemas Difusos Inteligentes/**/*.docx
-Sistemas Difusos Inteligentes/**/*.xlsx
-Sistemas Difusos Inteligentes/**/*.csv
-Sistemas Difusos Inteligentes/**/*.txt
-Sistemas Difusos Inteligentes/**/*.md
+Sistemas Difusos Inteligentes/**/*.pptx
 Sistemas Difusos Inteligentes/**/*.png
 Sistemas Difusos Inteligentes/**/*.jpg
 Sistemas Difusos Inteligentes/**/*.jpeg
+Sistemas Difusos Inteligentes/**/*.gif
 Sistemas Difusos Inteligentes/**/*.tmp
 Sistemas Difusos Inteligentes/**/~$*
 
@@ -72,13 +85,6 @@ env/
 .ipynb_checkpoints/
 
 # ============================================================
-# Generated images
-# ============================================================
-**/resultados/*.png
-**/resultados/*.jpg
-**/resultados/*.jpeg
-
-# ============================================================
 # Machine Learning models
 # ============================================================
 *.joblib
@@ -92,14 +98,18 @@ env/
 events.out.tfevents.*
 
 # ============================================================
-# Large datasets and media
+# Datasets and compressed files
 # ============================================================
 *.zip
 *.gz
+
+# ============================================================
+# Audio / Video
+# ============================================================
 *.mp4
 *.m4a
 
 # ============================================================
-# Microsoft Office temporary files
+# Temporary Office files
 # ============================================================
 ~$*
