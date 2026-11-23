@@ -1,0 +1,7 @@
+| Criterio | Modelo Mamdani | Modelo Sugeno (TSK) | Modelo Tsukamoto |
+| :--- | :--- | :--- | :--- |
+| **Consecuente** | Conjunto difuso arbitrario (Triangular, Trapezoidal, Gaussiana). | Constante o ecuación lineal de las entradas ($p_i x + q_i y + r_i$). | Conjunto difuso **estrictamente monótono** (inversión $\mu^{-1}(\alpha)$). |
+| **Defusificación** | Integración de área (Centroide). | Promedio ponderado algebraico. | Promedio ponderado de valores invertidos. |
+| **Partición Óptima** | Rejilla (*Grid*) para máxima legibilidad lingüística. | Rejilla, Árbol o Dispersa (*Scatter* / ANFIS). | Rejilla o Árbol (sensible al traslape en los extremos). |
+| **Fortalezas** | • Máxima interpretabilidad humana.<br>• No requiere modelo matemático de la planta.<br>• Soporte nativo en *scikit-fuzzy* y MATLAB. | • Alta velocidad computacional.<br>• Continuidad garantizada en la superficie.<br>• Ideal para control adaptativo y optimización (**ANFIS**). | • Elimina la integración numérica del centroide.<br>• Respuesta siempre suave y monótona.<br>• Menor complejidad que Mamdani con mayor intuición geométrica que Sugeno. |
+| **Debilidades** | • Alto costo computacional.<br>• Difícil de analizar con teoría de control clásico. | • Pierde intuición lingüística en la salida.<br>• Exige datos o cálculo para fijar coeficientes lineales. | • Restringido a consecuentes monótonos (no admite triángulos simétricos).<br>• Sin objeto nativo en MATLAB ni *scikit-fuzzy*; requiere programación manual. |
