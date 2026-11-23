@@ -1,0 +1,4 @@
+| Dimensión | Modelo Mamdani | Modelo Sugeno (TSK) | Modelo Tsukamoto |
+| :--- | :--- | :--- | :--- |
+| Fortalezas | • Máxima interpretabilidad lingüística. • Ideal para capturar heurística humana sin ecuaciones. • Amplio soporte en scikit-fuzzy y MATLAB. | • Alta eficiencia computacional (sin integración numérica). • Superficies suaves y continuas. • Base directa para optimización y redes neuro-difusas (ANFIS). | • Evita el cálculo del centroide. • Garantiza monotonicidad y suavidad en la respuesta. • Mantiene cierta noción gráfica del consecuente. |
+| Debilidades | • Alto costo computacional (defusificación por centroide). • Complejo de analizar matemáticamente en control clásico. | • Menor transparencia intuitiva en el consecuente. • Requiere conocimiento analítico o datos para fijar los coeficientes pi, qi, ri. | • Restringido estrictamente a funciones monótonas (no permite triángulos simétricos). • Sin soporte nativo en la mayoría de librerías comerciales. |
