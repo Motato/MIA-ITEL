@@ -18,6 +18,7 @@ dependencies = [
     "pandas>=2.2.2",
     "plotly>=7.1.0",
     "python-dotenv>=1.2.4",
+    "python-pptx>=1.0.2",
     "requests>=2.32.3",
     "scikit-fuzzy>=0.5.0",
     "scikit-learn>=1.5.2",
